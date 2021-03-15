@@ -157,7 +157,7 @@ plt.show()
 
 row_id = 89
 recording_id_example = train_tp['recording_id'].iloc[row_id]
-audio_file = os.path.join(source_path, 'train', f'{"0a4e7e350"}.flac')
+audio_file = os.path.join(source_path, 'train', f'{recording_id_example}.flac')
 print(f"Species ID: {train_tp['species_id'].iloc[row_id]} | "
       f"Songtype: {train_tp['songtype_id'].iloc[row_id]}"
       f"\n\t\tSignal\nBeginning: {train_tp['t_min'].iloc[row_id]} | "
